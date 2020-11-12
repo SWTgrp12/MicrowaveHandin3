@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\Microwave.App.csproj",
+      "projectUniqueName": "C:\\Users\\arsen\\Source\\Repos\\MicrowaveHandin3\\Microwave.App\\Microwave.App.csproj",
       "projectName": "Microwave.App",
-      "projectPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\Microwave.App.csproj",
+      "projectPath": "C:\\Users\\arsen\\Source\\Repos\\MicrowaveHandin3\\Microwave.App\\Microwave.App.csproj",
       "packagesPath": "C:\\Users\\arsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\obj\\",
+      "outputPath": "C:\\Users\\arsen\\Source\\Repos\\MicrowaveHandin3\\Microwave.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\Microwave.Classes.csproj": {
-              "projectPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\Microwave.Classes.csproj"
+            "C:\\Users\\arsen\\Source\\Repos\\MicrowaveHandin3\\Microwave.Classes\\Microwave.Classes.csproj": {
+              "projectPath": "C:\\Users\\arsen\\Source\\Repos\\MicrowaveHandin3\\Microwave.Classes\\Microwave.Classes.csproj"
             }
           }
         }
