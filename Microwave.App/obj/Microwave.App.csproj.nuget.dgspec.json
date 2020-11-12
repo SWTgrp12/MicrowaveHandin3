@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\Microwave.App.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\Microwave.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\Microwave.App.csproj",
+        "projectName": "Microwave.App",
+        "projectPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\Microwave.App.csproj",
+        "packagesPath": "C:\\Users\\arsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\arsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\Microwave.Classes.csproj": {
+                "projectPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\Microwave.Classes.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\Microwave.Classes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\Microwave.Classes.csproj",
+        "projectName": "Microwave.Classes",
+        "projectPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\Microwave.Classes.csproj",
+        "packagesPath": "C:\\Users\\arsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arsen\\Desktop\\courses\\SWT\\Handin 3\\Microwave.Classes\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\arsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
