@@ -9,12 +9,12 @@ using NSubstitute;
 using NSubstitute.Core.Arguments;
 using NUnit.Framework;
 
-namespace Microwave.Test.Unit
+namespace Microwave.Test.Integration
 {
     class Step3
     {
         private Light uut;
-        private Output output;
+        private IOutput output;
         private Display display;
         private UserInterface userInterface;
         private ICookController _ckctrl;
@@ -31,7 +31,7 @@ namespace Microwave.Test.Unit
             _powerButton = Substitute.For<IButton>();
             _timeButton = Substitute.For<IButton>();
             _ckctrl = Substitute.For<ICookController>();
-            output = new Output();
+            output = Substitute.For<IOutput>(); // used for testing output strings
             display = new Display(output);
             uut = new Light(output);
             userInterface = new UserInterface(_powerButton,_timeButton,_startCancelButton,_door,display, uut,_ckctrl);
@@ -39,12 +39,29 @@ namespace Microwave.Test.Unit
         }
 
         [Test]
-        public void door_close_light_off()
+        public void door_gets_opened_light_turns_on()
         {
-            bool notified = false; 
-            _door.Opened += (sender, args) => notified= true;
+            _door.Opened += Raise.EventWith(this, EventArgs.Empty); // closed per default so needs to be opened
             output.Received(1).OutputLine(Arg.Is<string>(str => str.Contains("on")));
 
+        }
+
+        [Test]
+        public void door_gets_closed_light_turns_off()
+        {
+            _door.Opened += Raise.EventWith(this, EventArgs.Empty);// cant close something that is already closed
+            _door.Closed += Raise.EventWith(this, EventArgs.Empty);
+            output.Received(1).OutputLine(Arg.Is<string>(str => str.Contains("off")));
+
+        }
+
+        [Test]
+        public void door_closed_pressed_startcancel_light_turns_on()
+        {
+            _door.Opened += Raise.EventWith(this, EventArgs.Empty);// cant close something that is already closed
+            _door.Closed += Raise.EventWith(this, EventArgs.Empty);
+            _startCancelButton.Pressed += Raise.EventWith(this, EventArgs.Empty);
+            output.Received(1).OutputLine(Arg.Is<string>(str => str.Contains("on")));
 
         }
     }

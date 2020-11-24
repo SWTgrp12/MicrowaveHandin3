@@ -9,7 +9,7 @@ using NSubstitute;
 using NSubstitute.Core.Arguments;
 using NUnit.Framework;
 
-namespace Microwave.Test.Unit
+namespace Microwave.Test.Integration
 {
     class Step1
     {
