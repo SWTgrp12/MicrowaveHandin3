@@ -89,7 +89,7 @@ namespace Microwave.Classes.Controllers
                     break;
                 case States.SETTIME:
                     myLight.TurnOn();
-                    myCooker.StartCooking(powerLevel, time*60);
+                    myCooker.StartCooking(powerLevel, time*60); // change so you dont have to wait minuets
                     myState = States.COOKING;
                     break;
                 case States.COOKING:
