@@ -39,7 +39,7 @@ namespace Microwave.Test.Integration
         }
 
         [Test]
-        public void door_gets_opened_light_turns_on()
+        public void door_gets_opened_light_turns_on_state_ready()
         {
             _door.Opened += Raise.EventWith(this, EventArgs.Empty); // closed per default so needs to be opened
             output.Received(1).OutputLine(Arg.Is<string>(str => str.Contains("on")));
@@ -47,7 +47,7 @@ namespace Microwave.Test.Integration
         }
 
         [Test]
-        public void door_gets_closed_light_turns_off()
+        public void door_gets_closed_light_turns_off_state_ready()
         {
             _door.Opened += Raise.EventWith(this, EventArgs.Empty);// cant close something that is already closed
             _door.Closed += Raise.EventWith(this, EventArgs.Empty);
@@ -55,14 +55,5 @@ namespace Microwave.Test.Integration
 
         }
 
-        [Test]
-        public void door_closed_pressed_startcancel_light_turns_on()
-        {
-            _door.Opened += Raise.EventWith(this, EventArgs.Empty);// cant close something that is already closed
-            _door.Closed += Raise.EventWith(this, EventArgs.Empty);
-            _startCancelButton.Pressed += Raise.EventWith(this, EventArgs.Empty);
-            output.Received(1).OutputLine(Arg.Is<string>(str => str.Contains("on")));
-
-        }
     }
 }
